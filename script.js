@@ -126,6 +126,13 @@ const quizData = [
         b: 'Divine Simplicity',
         c: 'Divine Deity',
         correct: 'b'
+    },
+    {
+        question: 'Which of the following statements about Christ is false?',
+        a:'Christ has two wills',
+        b: 'Christ has two natures',
+        c: 'Christ has two persons',
+        correct: 'b'
     }
 ];
 
