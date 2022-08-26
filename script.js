@@ -93,13 +93,42 @@ const quizData = [
         correct: 'b'
     },
     {
-        question: 'It is the hinge on which true religion turns.',
-        a:'Eutyc',
-        b: 'Hebrew',
-        c: 'Aramaic',
+        question: 'It is the hinge on which true religion turns. - Calvin',
+        a:'Justification',
+        b: 'Death of Christ',
+        c: 'Life of Christ',
         correct: 'a'
+    },
+    {
+        question: 'It is the ancient heresy that teaches Christ has only one nature.',
+        a:'Eutychianism',
+        b: 'Nestorianism',
+        c: 'Appolinarianism',
+        correct: 'a'
+    },
+    {
+        question: 'It is the ancient heresy that teaches Christ is a lesser god',
+        a:'Arianism',
+        b: 'Nestorianism',
+        c: 'Appolinarianism',
+        correct: 'a'
+    },
+    {
+        question: 'Which of the following is NOT true about the Trinity',
+        a:'The Three Persons are One Being',
+        b: 'The Three Persons are Eternal',
+        c: 'The Three Persons has as essential subordination',
+        correct: 'c'
+    },
+    {
+        question: 'It is the doctrine that teaches that All that is in God is God',
+        a:'Divine Impassibility',
+        b: 'Divine Simplicity',
+        c: 'Divine Deity',
+        correct: 'b'
     }
 ];
+
 
 const quizBody = document.getElementById("quiz-body");
 const startQuiz = document.querySelector(".start-quiz");
