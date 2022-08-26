@@ -16,8 +16,10 @@ body {
 
 .header-title {
     max-width: 80%;
+}
 
-
+.title {
+    font-size: 3rem;
 }
 .btn {
     cursor: pointer;
@@ -56,7 +58,7 @@ body {
     display: block;
     width: 100%;
     background-color:aqua;
-    color: black;
+    color: white;
 
     padding: 1em;
     border: none;
@@ -64,8 +66,10 @@ body {
 }
 .submit-btn:hover {
     background-color: rgb(29, 121, 121);
-    color: white;
+    
 }
+
+
 ul li {
     list-style-type: none;
     padding: 1em;

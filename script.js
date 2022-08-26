@@ -1,6 +1,9 @@
 // create quiz data array
 // declare variables needed: title header, start quiz, quiz-body, question-title, answers
-// 
+// loadQuizData
+// Submit button to increment current quuestion and 
+// check the selection and get total score
+
 
 const quizData = [
     {
@@ -41,6 +44,7 @@ const questionTitle = document.getElementById("question-title");
 const a_text = document.getElementById("a");
 const b_text = document.getElementById("b");
 const c_text = document.getElementById("c");
+const answers = document.querySelectorAll(".answer")
 
 // loadQuizData
 
@@ -61,20 +65,31 @@ const loadQuizData = () => {
 
 loadQuizData();
 
-// Submit button to increment current quuestion and 
+// Submit button to increment current question  
 submitButton.addEventListener('click', () => {
     currentQuestion++;
     loadQuizData();
-    
-    console.log("you've clicked me")
+    getSelection()
 })
 
 // check the selection and get total scores
 
-const getSelection = () => {
-    
+function getSelection() {
+    // let answer;
+    answers.forEach(answer => {
+        if(answer.checked === quizData[currentQuestion].correct) {
+            console.log("answer selected");
+        } else {
+            console.log("no answer selected");
+        }
+    });
+
 }
 
+
+restartQuiz.addEventListener('click', () => {
+    location.reload();
+})
 
 
  
