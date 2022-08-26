@@ -8,7 +8,7 @@
 
 const quizData = [
     {
-        question: 'It is the righteousness of Christ legally imputed on sinners by faith.',
+        question: 'It is where the righteousness of Christ is legally imputed on sinner\'s account by faith.',
         a:'Sanctification',
         b: 'Justification',
         c: 'Faith',
@@ -35,6 +35,62 @@ const quizData = [
         b: 'Gospel',
         c: 'Grace',
         correct: 'b'
+    },
+    {
+        question: 'It teaches that believers are legally declared as God\'s children.',
+        a:'Adoption',
+        b: 'Justification',
+        c: 'Sanctification',
+        correct: 'a'
+    },
+    {
+        question: 'Which of the following is NOT an attribute of Canonicity?',
+        a:'Corporate Reception',
+        b: 'Divine Quality',
+        c: 'Ecumenical Councils',
+        correct: 'c'
+    },
+    {
+        question: 'The three persons of the Godhead are ______',
+        a:'Gods',
+        b: 'One God',
+        c: 'Three Gods',
+        correct: 'b'
+    },
+    {
+        question: 'How many Old Testament books do we have?',
+        a:'27',
+        b: '39',
+        c: '66',
+        correct: 'b'
+    },
+    {
+        question: 'We are justified by ______.',
+        a:'Faith',
+        b: 'Works',
+        c: 'Obedience',
+        correct: 'a'
+    },
+    {
+        question: 'Which of the following is NOT an attribute of the Scriptures?.',
+        a:'Clarity',
+        b: 'Authority',
+        c: 'Perpetuity',
+        correct: 'c'
+    },
+    {
+        question: 'Jesus Christ is _______.',
+        a:'God only',
+        b: 'Man only',
+        c: 'God and Man',
+        correct: 'c'
+    },
+    {
+        question: 'The New Testament was written in ______.',
+        a:'Greek',
+        b: 'Hebrew',
+        c: 'Aramaic',
+        correct: 'a'
     }
 ];
 
