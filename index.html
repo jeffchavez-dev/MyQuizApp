@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title>My Quiz App</title>
 </head>
 <body>
@@ -12,17 +12,28 @@
         <h1 class="title">Ready to take the quiz?</h1>
         <button class="btn" id="startquiz">Start Quiz</button>
     </div>
-    <div class="quiz" id="quiz">
-        <h1 id="question">Question</h1>
-            <input type="radio" name="answer" id="a_text" class="a">
-            <label for="a">Answer</label>
-            <input type="radio" name="answer" id="b_text" class="b">
-            <label for="b">Answer</label>
-            <input type="radio" name="answer" id="c_text" class="c">
-            <label for="c">Answer</label>
+    <div class="quiz-body" id="quiz-body">
+        <div class="quiz-header">
+            <h1 id="question-title">Question</h1>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a_text" class="a">
+                        <label for="a">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b_text" class="b">
+                        <label for="b">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c_text" class="c">
+                        <label for="c">Answer</label>
+                    </li>
+                </ul>
+        </div>
         <button class="submit-btn">Submit</button>
-        <button class="btn" id="restart-quiz">Start Quiz</button>
+       
     </div>
+    <button class="btn" id="restart-quiz">Restart Quiz</button>
 <script src="script.js"></script>
 </body>
 </html>
