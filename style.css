@@ -51,6 +51,12 @@ body {
     font-size: 1.2em;
     overflow: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+    #question-title {
+        font-size: 1.2em;
+    }
+}
 .show {
     display: flex;
 }
