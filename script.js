@@ -39,8 +39,9 @@ const quizData = [
 ];
 
 const quizBody = document.getElementById("quiz-body");
-const startQuiz = document.getElementById("start-quiz");
-const restartQuiz = document.getElementById("restart-quiz");
+const startQuiz = document.querySelector(".start-quiz");
+const headerTitle = document.querySelector(".header-title");
+const restartQuiz = document.querySelector(".restart-quiz");
 const questionTitle = document.getElementById("question-title");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
@@ -48,12 +49,25 @@ const c_text = document.getElementById("c_text");
 const answerEls = document.querySelectorAll(".answer");
 const submitButton = document.querySelector(".submit-btn");
 
-// loadQuizData
+// create function to shuflle the quiz 
 
+const shuffleQuiz = (arr) => {
+    arr.sort(() => Math.random() -0.5);
+}
+
+shuffleQuiz(quizData)
+startQuiz.addEventListener('click', () => {
+    quizBody.classList.add("show");
+    headerTitle.classList.add('hide');
+})
+
+
+// loadQuizData
 let currentQuestion = 0;
 let score = 0;
 
 const loadQuizData = () => {
+    deSelectAnswers();
     const quiz = quizData[currentQuestion];
     questionTitle.innerText = quiz.question;
     a_text.innerText = quiz.a;
@@ -78,8 +92,13 @@ const getSelected = () => {
     return answer; // it will return the ID of the selection
 }
 
+// everytime you load the quiz data there should be select
+function deSelectAnswers() {
+    answerEls.forEach((answerEl) => {
+        answerEl.checked = false;
+    })
 
-
+}
 
 
 // Submit button to increment current question  
@@ -90,19 +109,20 @@ submitButton.addEventListener('click', () => {
     const answer = getSelected();
 
 
-    // if(answer) { //check first to see if there is an answer
-
-    // }
-    if(answer === quizData[currentQuestion].correct) {
-        score++;
+    if(answer) { //check first to see if there is an answer
+        if(answer === quizData[currentQuestion].correct) {
+            score++;
+        }
+        currentQuestion++;
+    
+        // prevent loadQuizData from incrementing if no question remains
+        if(currentQuestion < quizData.length){
+            loadQuizData();
+        } else {
+            quizBody.innerHTML = `<h1 class="final-score">You scored ${score}/${quizData.length}`;
+            restartQuiz.classList.add("retake");
+        }
     }
-    currentQuestion++;
-
-    // prevent loadQuizData from incrementing if no question remains
-    if()
-    
-    loadQuizData();
-    
 })
 
 // check the selection and get total scores
