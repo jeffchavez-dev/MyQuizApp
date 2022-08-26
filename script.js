@@ -38,21 +38,44 @@ const quizBody = document.getElementById("quiz-body");
 const startQuiz = document.getElementById("start-quiz");
 const restartQuiz = document.getElementById("restart-quiz");
 const questionTitle = document.getElementById("question-title");
-const a_text = document.getElementById("a_text");
-const b_text = document.getElementById("b_text");
-const c_text = document.getElementById("c_text");
+const a_text = document.getElementById("a");
+const b_text = document.getElementById("b");
+const c_text = document.getElementById("c");
 
 // loadQuizData
 
 let currentQuestion = 0;
+
+const submitButton = document.querySelector(".submit-btn")
+
+
 
 const loadQuizData = () => {
     const quiz = quizData[currentQuestion];
 
     questionTitle.innerText = quiz.question;
     a_text.innerText = quiz.a;
+    b_text.innerText = quiz.b;
+    c_text.innerText = quiz.c;
+}
 
+loadQuizData();
+
+// Submit button to increment current quuestion and 
+submitButton.addEventListener('click', () => {
+    currentQuestion++;
+    loadQuizData();
+    
+    console.log("you've clicked me")
+})
+
+// check the selection and get total scores
+
+const getSelection = () => {
+    
 }
 
 
-loadQuizData();
+
+ 
+
