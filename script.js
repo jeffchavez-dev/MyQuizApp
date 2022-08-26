@@ -23,13 +23,6 @@ const quizData = [
         correct: 'a'
     },
     {
-        question: 'Who is the author of the Epistle to Hebrews',
-        a:'Apollos',
-        b: 'Silvanus',
-        c: 'Paul',
-        correct: 'c'
-    },
-    {
         question: 'It is the power of God unto salvation for those who believe.',
         a:'Christ',
         b: 'Gospel',
@@ -88,6 +81,20 @@ const quizData = [
     {
         question: 'The New Testament was written in ______.',
         a:'Greek',
+        b: 'Hebrew',
+        c: 'Aramaic',
+        correct: 'a'
+    },
+    {
+        question: 'It is the ancient heresy that teaches Christ has two persons.',
+        a:'Arianism',
+        b: 'Nestorianism',
+        c: 'Appolinarianism',
+        correct: 'b'
+    },
+    {
+        question: 'It is the hinge on which true religion turns.',
+        a:'Eutyc',
         b: 'Hebrew',
         c: 'Aramaic',
         correct: 'a'
