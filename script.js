@@ -174,7 +174,7 @@ const quizData = [
         a:'For my self-enjoyment',
         b: 'For His own glory. ',
         c: 'For our happiness',
-        correct: 'c'
+        correct: 'b'
     }
 ];
 
@@ -184,6 +184,7 @@ const quizBody = document.getElementById("quiz-body");
 const startQuiz = document.querySelector(".start-quiz");
 const headerTitle = document.querySelector(".header-title");
 const restartQuiz = document.querySelector(".restart-quiz");
+const incorrectAnswer = document.querySelector(".incorrect-answer");
 const questionTitle = document.getElementById("question-title");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
@@ -242,7 +243,18 @@ function deSelectAnswers() {
 
 }
 
+const incorrectAnswerNotif = () => {
+    const notif = document.createElement("div")
+    notif.classList.add("incorrect-answer")
+    notif.innerText = "Incorrect"
+    
+    incorrectAnswer.appendChild(notif);
+    console.log("wrong answer")
 
+    setTimeout(() => {
+        notif.remove()
+    }, 1000)
+}
 // Submit button to increment current question  
 submitButton.addEventListener('click', () => {
     // once the button is clicked check also if the selection matched 
@@ -254,6 +266,8 @@ submitButton.addEventListener('click', () => {
     if(answer) { //check first to see if there is an answer
         if(answer === quizData[currentQuestion].correct) {
             score++;
+        } else {
+           incorrectAnswerNotif();
         }
         currentQuestion++;
     

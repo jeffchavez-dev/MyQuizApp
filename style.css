@@ -80,6 +80,7 @@ body {
 }
 
 
+
 ul li {
     list-style-type: none;
     padding: 1em;
@@ -99,4 +100,17 @@ ul > input {
 }
 .retake {
     display: block;
+}
+
+/* incorrect answer */
+
+.incorrect-answer {
+    display: block;
+    width: 100%;
+}
+.show-error {
+    display: block;;
+    color: white;
+    background-color: red;
+    width: 100%;
 }
