@@ -16,6 +16,13 @@ const quizData = [
     
     }, 
     {
+        question: 'It is referred to as the visible sign of invisible grace.',
+        a:'Salvation',
+        b: 'Sacraments',
+        c: 'Sanctification',
+        correct: 'b'
+    },, 
+    {
         question: 'It is referred to as the greatest mystery of the Christian faith.',
         a:'Incarnation',
         b: 'Resurrection',
@@ -133,7 +140,43 @@ const quizData = [
         b: 'Christ has two natures',
         c: 'Christ has two persons',
         correct: 'b'
+    },
+    {
+        question: 'Baptism Catechism Question #39: What is the sinful nature that we inherit from Adam called?',
+        a:'Free Will',
+        b: 'Original sin',
+        c: 'Total Depravity',
+        correct: 'b'
+    },
+    {
+        question: 'Baptism Catechism Question #47: Whom did Christ represent in the covenant of grace?',
+        a:'His elect people',
+        b: 'His Entire Creation',
+        c: 'Members of the Local Church',
+        correct: 'a'
+    },
+    {
+        question: 'For whom did Christ die?',
+        a:'All people without distinction',
+        b: 'All people without exception',
+        c: 'None',
+        correct: 'a'
+    },
+    {
+        question: 'Which law is eternally binding to all people?',
+        a:'Ceremonial Law',
+        b: 'Civil Law',
+        c: 'Moral Law',
+        correct: 'c'
+    },
+    {
+        question: 'Baptism Catechism Question #3: Why did God make you and all things?',
+        a:'For my self-enjoyment',
+        b: 'For His own glory. ',
+        c: 'For our happiness',
+        correct: 'c'
     }
+];
 ];
 
 
