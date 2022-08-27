@@ -14,14 +14,14 @@ const quizData = [
         c: 'Faith',
         correct: 'b'
     
-    }, 
+    },
     {
         question: 'It is referred to as the visible sign of invisible grace.',
         a:'Salvation',
         b: 'Sacraments',
         c: 'Sanctification',
         correct: 'b'
-    },, 
+    },
     {
         question: 'It is referred to as the greatest mystery of the Christian faith.',
         a:'Incarnation',
@@ -199,6 +199,7 @@ const shuffleQuiz = (arr) => {
 }
 
 shuffleQuiz(quizData)
+
 startQuiz.addEventListener('click', () => {
     quizBody.classList.add("show");
     headerTitle.classList.add('hide');
