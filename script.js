@@ -177,7 +177,7 @@ const quizData = [
         correct: 'c'
     }
 ];
-];
+
 
 
 const quizBody = document.getElementById("quiz-body");
