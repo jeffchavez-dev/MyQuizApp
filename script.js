@@ -245,8 +245,8 @@ function deSelectAnswers() {
 
 const incorrectAnswerNotif = () => {
     const notif = document.createElement("div")
-    notif.classList.add("incorrect-answer")
-    notif.innerText = "Incorrect"
+    notif.classList.add("show-error")
+    notif.innerText = "Incorrect!"
     
     incorrectAnswer.appendChild(notif);
     console.log("wrong answer")
