@@ -114,14 +114,14 @@ const quizData = [
         correct: 'a'
     },
     {
-        question: 'It is the ancient heresy that teaches Christ is a lesser god',
+        question: 'It is the ancient heresy that teaches Christ is a lesser god.',
         a:'Arianism',
         b: 'Nestorianism',
         c: 'Appolinarianism',
         correct: 'a'
     },
     {
-        question: 'Which of the following is NOT true about the Trinity',
+        question: 'Which of the following is NOT true about the Trinity.',
         a:'The Three Persons are One Being',
         b: 'The Three Persons are Eternal',
         c: 'The Three Persons has essential subordination',
@@ -139,7 +139,7 @@ const quizData = [
         a:'Christ has two wills',
         b: 'Christ has two natures',
         c: 'Christ has two persons',
-        correct: 'b'
+        correct: 'c'
     },
     {
         question: 'Baptism Catechism Question #39: What is the sinful nature that we inherit from Adam called?',
