@@ -124,7 +124,7 @@ const quizData = [
         question: 'Which of the following is NOT true about the Trinity',
         a:'The Three Persons are One Being',
         b: 'The Three Persons are Eternal',
-        c: 'The Three Persons has as essential subordination',
+        c: 'The Three Persons has essential subordination',
         correct: 'c'
     },
     {
