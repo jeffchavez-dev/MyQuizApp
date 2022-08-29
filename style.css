@@ -80,14 +80,17 @@ body {
 }
 
 .incorrect-answer {
+    position: relative;
     display: block;
     width: 100%;
 }
 .show-error {
+    position: absolute;
     display: block;;
     color: white;
     background-color: red;
     width: 100%;
+    opacity: .8;
 }
 
 ul li {
