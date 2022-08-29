@@ -175,6 +175,13 @@ const quizData = [
         b: 'For His own glory. ',
         c: 'For our happiness',
         correct: 'b'
+    },
+    {
+        question: 'This doctrine teaches that God is everywhere.',
+        a:'Panentheism',
+        b: 'Omnipresence',
+        c: 'Pantheism',
+        correct: 'b'
     }
 ];
 
