@@ -142,14 +142,14 @@ const quizData = [
         correct: 'c'
     },
     {
-        question: 'Baptism Catechism Question #39: What is the sinful nature that we inherit from Adam called?',
+        question: 'Baptist Catechism Question #39: What is the sinful nature that we inherit from Adam called?',
         a:'Free Will',
         b: 'Original sin',
         c: 'Total Depravity',
         correct: 'b'
     },
     {
-        question: 'Baptism Catechism Question #47: Whom did Christ represent in the covenant of grace?',
+        question: 'Baptist Catechism Question #47: Whom did Christ represent in the covenant of grace?',
         a:'His elect people',
         b: 'His Entire Creation',
         c: 'Members of the Local Church',
@@ -170,7 +170,7 @@ const quizData = [
         correct: 'c'
     },
     {
-        question: 'Baptism Catechism Question #3: Why did God make you and all things?',
+        question: 'Baptist Catechism Question #3: Why did God make you and all things?',
         a:'For my self-enjoyment',
         b: 'For His own glory. ',
         c: 'For our happiness',
