@@ -210,12 +210,28 @@ shuffleQuiz(quizData)
 startQuiz.addEventListener('click', () => {
     quizBody.classList.add("show");
     headerTitle.classList.add('hide');
+     quizTimer()
 })
 
 
 // loadQuizData
 let currentQuestion = 0;
 let score = 0;
+
+function quizTimer() {
+    let time = 5;
+    const interval = setInterval(timer, 1000)
+    function timer(){
+        if(time === 0) {
+        // alert('times up!')
+        clearInterval(interval)
+        } else {
+            // console.log(time--)
+        }
+    }
+}
+
+
 
 const loadQuizData = () => {
     deSelectAnswers();
@@ -224,6 +240,7 @@ const loadQuizData = () => {
     a_text.innerText = quiz.a;
     b_text.innerText = quiz.b;
     c_text.innerText = quiz.c;
+   
 }
 
 loadQuizData();
@@ -255,10 +272,7 @@ const incorrectAnswerNotif = () => {
     const notif = document.createElement("div")
     notif.classList.add("show-error")
     notif.innerText = "Incorrect!"
-    
     incorrectAnswer.appendChild(notif);
-    console.log("wrong answer")
-
     setTimeout(() => {
         notif.remove()
     }, 1000)
@@ -274,6 +288,7 @@ submitButton.addEventListener('click', () => {
     if(answer) { //check first to see if there is an answer
         if(answer === quizData[currentQuestion].correct) {
             score++;
+            
         } else {
            incorrectAnswerNotif();
         }
@@ -281,6 +296,7 @@ submitButton.addEventListener('click', () => {
     
         // prevent loadQuizData from incrementing if no question remains
         if(currentQuestion < quizData.length){
+            quizTimer()
             loadQuizData();
         } else {
             quizBody.innerHTML = `<h1 class="final-score">You scored ${score}/${quizData.length}`;
