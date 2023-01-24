@@ -83,9 +83,11 @@ body {
 
 
 .track-length {
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: flex-end;
+    margin-right: 1.5rem;
 }
 .incorrect-answer {
     position: relative;
