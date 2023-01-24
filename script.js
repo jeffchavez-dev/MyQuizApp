@@ -268,7 +268,8 @@ function deSelectAnswers() {
 
 }
 
-
+const trackQuestion = document.querySelector('.current-question')
+const trackTotal = document.querySelector('.total-question')
 console.log(currentQuestion)
 console.log(Object.keys(quizData).length)
 
