@@ -268,6 +268,11 @@ function deSelectAnswers() {
 
 }
 
+
+console.log(currentQuestion)
+console.log(Object.keys(quizData).length)
+
+
 const incorrectAnswerNotif = () => {
     const notif = document.createElement("div")
     notif.classList.add("show-error")
