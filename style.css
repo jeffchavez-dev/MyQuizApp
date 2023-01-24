@@ -81,6 +81,12 @@ body {
     
 }
 
+
+.track-length {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
 .incorrect-answer {
     position: relative;
     display: block;
