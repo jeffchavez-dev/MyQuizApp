@@ -241,6 +241,10 @@ function quizTimer() {
 const loadQuizData = () => {
     deSelectAnswers();
     const quiz = quizData[currentQuestion];
+
+    trackQuestion.textContent = currentQuestion + 1
+    trackTotal.textContent = Object.keys(quizData).length
+
     questionTitle.innerText = quiz.question;
     a_text.innerText = quiz.a;
     b_text.innerText = quiz.b;
