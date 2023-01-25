@@ -88,6 +88,7 @@ body {
     justify-content: end;
     align-items: flex-end;
     margin-right: 1.5rem;
+    margin-top: 1.5rem
 }
 .incorrect-answer {
     position: relative;
